@@ -1,20 +1,33 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.parent {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
 }
 
-.mobile{
-    background-color: red;
+.mobile,
+.pc {
 }
-.pc{
-    background-color: green;
+.mobile {
+	background-color: red;
+}
+.pc {
+	background-color: green;
 }
 
-@media(min-width: 1200px){
-    display: flex;
-}
+@media (min-width: 800px) {
+	.parent {
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+	}
 
-@media(min-width: 400px){
-    display: block;
+	.mobile,
+	.pc {
+		width: 100%;
+	}
 }
