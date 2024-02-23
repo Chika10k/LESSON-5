@@ -19,6 +19,12 @@
 	background-color: green;
 }
 
+ul li {
+	margin: 3rem 0;
+}
+ul li:nth-child(odd) {
+	background-color: red;
+}
 @media (min-width: 800px) {
 	.parent {
 		display: flex;
