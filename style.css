@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mobile{
+    background-color: red;
+}
+.pc{
+    background-color: green;
+}
+
+@media(min-width: 1200px){
+    display: flex;
+}
+
+@media(min-width: 400px){
+    display: block;
+}
